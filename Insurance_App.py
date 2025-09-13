@@ -1,3 +1,6 @@
+#This is Code used in Visual Studio Code for stramlit purpose.
+#Above this Insurance_App file you seeing .ipynb file that i create using Google Colab.
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -55,3 +58,4 @@ input_df = pd.DataFrame(input_dict)
 if st.button("Predict Charges"):
     prediction = Model.predict(input_df)
     st.success(f"💰 Estimated Insurance Charge: ${prediction[0]:.2f}")
+
